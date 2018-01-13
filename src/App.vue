@@ -5,16 +5,20 @@
 </template>
 
 <script>
-  import Cat from './components/Cat'
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  import Cat from './components/Cat.vue'
+
+  export default {
+
+    name: 'app',
+    data() {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
+    },
+    components: {
+      Cat
     }
-  },
-  components: { Cat }
-}
+  }
 </script>
 
 <style lang="scss">
