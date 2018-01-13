@@ -1,10 +1,14 @@
 <template>
   <div class="elevation-demo">
     <md-content class="md-elevation-1">
-      <div class="child">Auto & Transportation</div>
+
+        <div class="child">Auto & Transportation</div>
+        <div class="img"><img src="../assets/img/suv.svg" alt=""></div>
+
     </md-content>
     <md-content class="md-elevation-2">
       <div class="child">Packaging, Advertising, Office</div>
+      <div class="img"><img src="../assets/img/suv.svg" alt=""></div>
     </md-content>
     <md-content class="md-elevation-3">
       <div class="child">Bags, Shoes & Accessories</div>
@@ -50,6 +54,7 @@
   @import '../assets/css/variables';
 
   .elevation-demo {
+    background: $background;
     justify-content: center;
     padding: 16px;
     display: inline-flex;
@@ -58,9 +63,10 @@
   }
 
   .md-content {
+    flex-direction: column;
     cursor: pointer;
     font-size: $font-size;
-    color: #243238;
+    color: $color;
     border: $border;
     margin: -1px -1px 0 0;
     box-shadow: none !important;
@@ -78,4 +84,10 @@
       text-align: center;
     }
   }
+  .img {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+  }
+
 </style>
