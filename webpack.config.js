@@ -22,7 +22,8 @@ module.exports = {
         use: [
           'vue-style-loader',
           'css-loader',
-          'sass-loader'
+          'sass-loader',
+          'postcss-loader'
         ],
       },
       {
@@ -100,6 +101,9 @@ if (process.env.NODE_ENV === 'production') {
       compress: {
         warnings: false
       }
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true
     })
   ])
 }
