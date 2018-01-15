@@ -1,0 +1,48 @@
+@import '../../assets/css/variables';
+
+.elevation-demo {
+  background: $background;
+  justify-content: center;
+  padding: 16px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.md-content {
+
+  cursor: pointer;
+  font-size: $font-size;
+  color: $color;
+  border: $border;
+  margin: -1px -1px 0 0;
+  box-shadow: none !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 165px;
+  height: 165px;
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+  .child {
+    margin-top: 25px;
+    position: absolute;
+    font-family: $font-family;
+    width: 150px;
+    text-align: center;
+    line-height: 1.1;
+  }
+}
+
+.img {
+  margin-top: 30px;
+  height: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 60px;
+    background-size: contain;
+  }
+}

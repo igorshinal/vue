@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <cat></cat>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import Cat from './components/Cat.vue'
+  // import Cat from './components/Cat.vue'
 
   export default {
 
     name: 'app',
     data() {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        msg: ''
       }
-    },
-    components: {
-      Cat
     }
+    // components: {
+    //   Cat
+    // }
   }
 </script>
 
