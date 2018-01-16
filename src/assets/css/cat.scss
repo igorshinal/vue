@@ -12,7 +12,6 @@
 .md-content {
 
   cursor: pointer;
-  font-size: $font-size;
   color: $color;
   border: $border;
   margin: -1px -1px 0 0;
@@ -20,6 +19,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  align-content: center;
   width: 165px;
   height: 165px;
   &:hover {
@@ -28,7 +28,6 @@
   .child {
     margin-top: 25px;
     position: absolute;
-    font-family: $font-family;
     width: 150px;
     text-align: center;
     line-height: 1.1;

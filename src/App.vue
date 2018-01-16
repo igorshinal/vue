@@ -5,22 +5,20 @@
 </template>
 
 <script>
-  // import Cat from './components/Cat.vue'
-
   export default {
-
     name: 'app',
     data() {
       return {
         msg: ''
       }
     }
-    // components: {
-    //   Cat
-    // }
   }
 </script>
 
 <style lang="scss">
+  #app {
+    font-family: 'Rokkitt', serif;
+    font-size: 14px;
+  }
 
 </style>
