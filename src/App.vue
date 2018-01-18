@@ -1,16 +1,26 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <cat></cat>
+    <transport></transport>
+    <add></add>
   </div>
 </template>
 
 <script>
+  import Add from './components/Additional'
+  import Cat from './components/Cat'
+  import Transport from './components/Transport'
   export default {
     name: 'app',
     data() {
       return {
         msg: ''
       }
+    },
+    components: {
+      Add,
+      Cat,
+      Transport
     }
   }
 </script>
